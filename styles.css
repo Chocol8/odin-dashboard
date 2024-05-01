@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template: 15% 15% 70% / 20% 80%;
+}
+
+.sidebar{
+    background-color: #e0115f;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 100px;
+    grid-area: 1 / 1 / 5 / 2;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.flower_logo{
+    height: 100px;
+    width: 100px;
+}
+
+.logo-text{
+    color: white;
+}
