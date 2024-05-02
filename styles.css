@@ -129,10 +129,32 @@
     background-color: #efefef;
 }
 
+.announcements-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.extra-card{
+    background-color: white;
+    height: 200px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 1rem;
+}
+
 
 /*trending css*/
 
 .trending-container{
     grid-area: 4 / 3 / 5 / 4;
     background-color: #efefef;
+}
+
+.trending-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
