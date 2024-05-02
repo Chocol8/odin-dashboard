@@ -217,6 +217,10 @@
     padding: 1rem;
 }
 
+.separator{
+    border: 2px solid #e0115f;
+}
+
 
 /*trending css*/
 
