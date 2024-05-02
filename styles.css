@@ -8,25 +8,29 @@
 .container{
     height: 100vh;
     display: grid;
-    grid-template: 15% 15% 70% / 20% 80%;
+    grid-template: 15% 15% 35% 35%/ 20% 55% 25%;
 }
 
+.container > div {
+    padding: 1rem;
+}
+
+/* Sidebar css */
 .sidebar{
     background-color: #e0115f;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     gap: 100px;
-    grid-area: 1 / 1 / 5 / 2;
+    grid-area: 1 / 1 / 6 / 2;
 }
 
-.nav, .others{
+.menu, .others{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
 }
 
-.nav div, .others div {
+.menu div, .others div {
     display: flex;
     color: white;
     column-gap: 10px;
@@ -53,4 +57,82 @@
 .logo-text{
     color: white;
     font-size: calc(0.5vh + 2rem);
+}
+
+/*nav css */
+.nav-container{
+    display: grid;
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search, .account{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon{
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+
+.greet-container{
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+
+/*projects css*/
+
+.project-container{
+    grid-area: 3 / 2 / 5 / 3;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.project-list{
+    display: grid;
+    grid-template: repeat(auto-fit,minmax(200px, 1fr)) / repeat(2,minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.card{
+    background-color: white;
+    height: 200px;
+    padding: 1rem;
+    border-left: 0.5rem solid pink;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+/*announcements css*/
+
+.announcements-container{
+    grid-area: 3 / 3 / 4 / 4;
+    background-color: #efefef;
+}
+
+
+/*trending css*/
+
+.trending-container{
+    grid-area: 4 / 3 / 5 / 4;
+    background-color: #efefef;
 }
